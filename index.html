@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Task 4</title>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+	</head>
+	<body>
+		<nav>
+			<h1>Student Portal</h1>
+		</nav>
+		<main>
+			<div id="searchbar">
+				<input
+					type="search"
+					name="search"
+					placeholder="Search"
+					id="search-input"
+				/>
+				<button
+					class="btn"
+					id="search-btn"
+				>
+					Search
+				</button>
+			</div>
+			<div id="sorting-btns">
+				<button
+					class="btn"
+					id="sort-az"
+				>
+					Sort A->Z
+				</button>
+				<button
+					class="btn"
+					id="sort-za"
+				>
+					Sort Z->A
+				</button>
+				<button
+					class="btn"
+					id="sort-marks"
+				>
+					Sort By Marks
+				</button>
+				<button
+					class="btn"
+					id="sort-passing"
+				>
+					Sort By Passing
+				</button>
+				<button
+					class="btn"
+					id="sort-class"
+				>
+					Sort By Class
+				</button>
+				<button
+					class="btn"
+					id="sort-gender"
+				>
+					Sort By Gender
+				</button>
+			</div>
+			<div class="tables">
+				<table id="table-1">
+					<thead>
+						<tr>
+							<th class="table-id">ID</th>
+							<th class="table-name">Name</th>
+							<th class="table-gender">Gender</th>
+							<th class="table-class">Class</th>
+							<th class="table-marks">Marks</th>
+							<th class="table-passing">Passing</th>
+							<th class="table-email">Email</th>
+						</tr>
+					</thead>
+					<tbody id="table-1-body"></tbody>
+				</table>
+				<table
+					id="table-2"
+					hidden
+				>
+					<thead>
+						<tr>
+							<th class="table-id">ID</th>
+							<th class="table-name">Name</th>
+							<th class="table-gender">Gender</th>
+							<th class="table-class">Class</th>
+							<th class="table-marks">Marks</th>
+							<th class="table-passing">Passing</th>
+							<th class="table-email">Email</th>
+						</tr>
+					</thead>
+					<tbody id="table-2-body"></tbody>
+				</table>
+			</div>
+		</main>
+	</body>
+	<script src="script.js"></script>
+</html>
